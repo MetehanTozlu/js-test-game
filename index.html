@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru Yarışması</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="card__content">
+
+            <div id="result" style="display: none;">
+                <h2 id="score"></h2>
+                <p id="message"></p>
+            </div>
+
+            <form id="quiz-form">
+                <h2 id="question"> </h2>
+                <div class="answers">
+                    <input type="radio" name="answer" value="A" id="optionA">
+                    <label for="optionA" id="labelA"></label>
+                </div>
+                <div class="answers">
+                    <input type="radio" name="answer" value="B" id="optionB">
+                    <label for="optionB" id="labelB"></label>
+                </div>
+                <div class="answers">
+                    <input type="radio" name="answer" value="C" id="optionC">
+                    <label for="optionC" id="labelC"></label>
+                </div>
+                <div class="answers">
+                    <input type="radio" name="answer" value="D" id="optionD">
+                    <label for="optionD" id="labelD"></label>
+                </div>
+
+                <div class="btn" id="submitBtn">
+                    <button type="button" >GÖNDER</button>
+                </div>
+
+                <p id="errorText" class="error-text"></p>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="assets/script.js" defer></script>
+</body>
+
+</html>

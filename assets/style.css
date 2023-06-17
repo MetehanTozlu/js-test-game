@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap");
+
+/*! BASE CODES START */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+/*! BASE CODES END */
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #5e5180;
+    color: #fafafa;
+}
+
+.card {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+.card__content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+
+.card__content #quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card__content #quiz-form #question {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: start;
+}
+
+.answers {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.answers input {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.answers label {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #10d5e3;
+    border: none;
+    border-radius: 10px;
+    height: 56px;
+    transition: all 0.4s ease;
+}
+
+.btn button {
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    color: #fafafa;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #0f2d66;
+    transform: scale(1.05);
+}
+
+
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width:760px) {
+    .card{
+        width: 85%;
+    }
+    html {
+        font-size: 15px;
+    }
+}
